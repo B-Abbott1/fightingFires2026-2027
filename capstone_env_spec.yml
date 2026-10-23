@@ -1,0 +1,41 @@
+
+name: capstone
+channels:
+  - conda-forge
+
+dependencies:
+  - python=3.12
+  - pip
+  - git
+  - pytest
+
+  ## Scientific Computing
+  - scipy=1.17
+  - numpy=2.4
+
+  ## Visualization
+  - notebook=7.5
+  - seaborn=0.13
+  - jupyterlab
+  - graphviz
+  - python-graphviz
+  - plotly
+
+  ## Data I/O
+  - pandas=2.3
+  - duckdb
+  - sqlite
+  - postgresql
+
+  ## Machine Learning
+  - scikit-learn=1.8
+  - xgboost
+  - shap
+
+  ## Hardware / Serial Communication
+  - pyserial
+
+  ## Pip-only packages
+  - pip:
+      - ipython
+      - ipython-sql
